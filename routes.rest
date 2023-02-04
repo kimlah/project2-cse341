@@ -1,4 +1,5 @@
 // LOCALHOST
+// USERS
 ###
 // get all users
 ###
@@ -36,15 +37,65 @@ content-type: application/json
   "birthday": "11-23-1992"
 }
 ###
-// DELETE route for deleting a contact -W03 Assignment
+// DELETE route for deleting a use by ID
 ###
 DELETE http://localhost:8081/users/63deb0ecb56e3af6b280eee5 HTTP/1.1 
 
 
 ############################################################################
 
+// LOCALHOST
+// RECIPES
+###
+// get all recipes
+###
+GET http://localhost:8081/recipes
+###
+// get one recipe by id
+###
+GET http://localhost:8081/recipes/63deb0dfb56e3af6b280eedf
+###
+// POST route for new recipe
+###
+POST http://localhost:8081/recipe HTTP/1.1 
+content-type: application/json
+
+{
+  "recipeName": "Snickerdoodle Cookies",
+  "source": "https://www.milehighmitts.com/snickerdoodle-cookies-gluten-free-dairy-free-option/",
+  "servings": "18 cookies",
+  "timeNeeded": "",
+  "cuisine": "",
+  "recipeType": "cookie",
+  "notes": "make sure to scrape bowl well between mixing"
+}
+###
+// PUT route for updating a recipe based on id
+###
+PUT http://localhost:8081/recipes/63deb0dfb56e3af6b280eedf HTTP/1.1 
+content-type: application/json
+
+{
+  "recipeName": "Snickerdoodles",
+  "source": "https://www.milehighmitts.com/snickerdoodle-cookies-gluten-free-dairy-free-option/",
+  "servings": "18 cookies",
+  "timeNeeded": "",
+  "cuisine": "",
+  "recipeType": "Cookie",
+  "notes": "make sure to scrape bowl well between mixing"
+}
+###
+// DELETE route for deleting a recipe by ID
+###
+DELETE http://localhost:8081/recipes/63deb0dfb56e3af6b280eedf HTTP/1.1 
+
+
+############################################################################
+############################################################################
+
 
 // PRODUCTION Deploy
+// USERS
 ###
 // get all users
 ###
@@ -52,7 +103,7 @@ GET https://project2-cse341.onrender.com/users
 ###
 // get one user by id
 ###
-GET https://project2-cse341.onrender.com/users/63deb359fc5e7757703de202
+GET https://project2-cse341.onrender.com/users/63debb3a8fc439b11882474d
 ###
 // POST route for new user
 ###
@@ -85,3 +136,50 @@ content-type: application/json
 // DELETE route for deleting a contact -W03 Assignment
 ###
 DELETE https://project2-cse341.onrender.com/users/63deb359fc5e7757703de202 HTTP/1.1 
+
+############################################################################
+
+// PRODUCTION Deploy
+// RECIPES
+###
+// get all recipes
+###
+GET https://project2-cse341.onrender.com/recipes
+###
+// get one recipe by id
+###
+GET https://project2-cse341.onrender.com/recipes/63deb0dfb56e3af6b280eedf
+###
+// POST route for new recipe
+###
+POST https://project2-cse341.onrender.com/recipe HTTP/1.1 
+content-type: application/json
+
+{
+  "recipeName": "Snickerdoodle Cookies",
+  "source": "https://www.milehighmitts.com/snickerdoodle-cookies-gluten-free-dairy-free-option/",
+  "servings": "18 cookies",
+  "timeNeeded": "",
+  "cuisine": "",
+  "recipeType": "cookie",
+  "notes": "make sure to scrape bowl well between mixing"
+}
+###
+// PUT route for updating a recipe based on id
+###
+PUT https://project2-cse341.onrender.com/recipes/63deb0dfb56e3af6b280eedf HTTP/1.1 
+content-type: application/json
+
+{
+  "recipeName": "Snickerdoodles",
+  "source": "https://www.milehighmitts.com/snickerdoodle-cookies-gluten-free-dairy-free-option/",
+  "servings": "18 cookies",
+  "timeNeeded": "",
+  "cuisine": "",
+  "recipeType": "Cookie",
+  "notes": "make sure to scrape bowl well between mixing"
+}
+###
+// DELETE route for deleting a recipe based on ID
+###
+DELETE https://project2-cse341.onrender.com/recipes/63deb0dfb56e3af6b280eedf HTTP/1.1 
