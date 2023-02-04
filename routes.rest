@@ -46,48 +46,42 @@ DELETE http://localhost:8081/users/63deb0ecb56e3af6b280eee5 HTTP/1.1
 
 // PRODUCTION Deploy
 ###
-// get all contacts -W02 Assignment
+// get all users
 ###
-GET https://w02assignment.onrender.com/contacts
+GET https://project2-cse341.onrender.com/users
 ###
-// get Kyla -W02 Assignment
+// get one user by id
 ###
-GET https://w02assignment.onrender.com/contacts/63c31cb18b5efb58e4cf2bd5
+GET https://project2-cse341.onrender.com/users/63deb359fc5e7757703de202
 ###
-// get Wyatt -W02 Assignment
+// POST route for new user
 ###
-GET https://w02assignment.onrender.com/contacts/63c31cd18b5efb58e4cf658f
-###
-// get Whit -W02 Assignment
-###
-GET https://w02assignment.onrender.com/contacts/63c31ce28b5efb58e4cf8875
-###
-// POST route for new contact -W03 Assignment
-###
-POST https://w02assignment.onrender.com/contacts HTTP/1.1 
+POST https://project2-cse341.onrender.com/users HTTP/1.1 
 content-type: application/json
 
 {
-    "firstName": "Hayden",
-    "lastName": "Imlah",
-    "email": "hayden.imlah@test.com",
-    "favoriteColor": "red",
-    "birthday": "11/17/2021"
+  "username": "kimlah",
+  "password": "kimlah",
+  "email": "kimlah@test.com",
+  "firstName": "Keeley",
+  "lastName": "Imlah",
+  "birthday": "11-23-1992"
 }
 ###
-// PUT route for updating a contact -W03 Assignment
+// PUT route for updating a user based on id
 ###
-PUT https://w02assignment.onrender.com/contacts/63c31ce28b5efb58e4cf8875 HTTP/1.1 
+PUT https://project2-cse341.onrender.com/users/63deb359fc5e7757703de202 HTTP/1.1 
 content-type: application/json
 
 {
-    "firstName": "Whit",
-    "lastName": "Imlah",
-    "email": "whit.imlah@test.com",
-    "favoriteColor": "purple",
-    "birthday": "08/06/2018"
+  "username": "klimlah",
+  "password": "klimlah",
+  "email": "k.l.imlah@test.com",
+  "firstName": "Keeley",
+  "lastName": "Imlah",
+  "birthday": "11-23-1992"
 }
 ###
 // DELETE route for deleting a contact -W03 Assignment
 ###
-DELETE https://w02assignment.onrender.com/contacts/63caf3a2b81256d1ba745508 HTTP/1.1 
+DELETE https://project2-cse341.onrender.com/users/63deb359fc5e7757703de202 HTTP/1.1 
