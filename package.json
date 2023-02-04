@@ -1,0 +1,32 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "Run npm install and npm start from the backend folder in the terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "swagger": "node ./swagger.js"
+  },
+  "author": "Keeley Imlah",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^4.13.0",
+    "swagger-ui-express": "^4.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "swagger-autogen": "^2.23.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimlah/project2-cse341.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimlah/project2-cse341/issues"
+  },
+  "homepage": "https://github.com/kimlah/project2-cse341#readme"
+}
