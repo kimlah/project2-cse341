@@ -2,7 +2,7 @@ const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
-  try{
+  try {
     const result = await mongodb
     .getDb()
     .db("project2")
@@ -35,6 +35,8 @@ const getSingle = async (req, res) => {
 };
 
 const createUser = async (req, res) => {
+  //const {username, password, email, firstName, lastName, birthday} = req.body;
+  //const newUser = new user({username, password, email, firstName, lastName, birthday});
   try {
     const user = {
       username: req.body.username,
@@ -44,6 +46,12 @@ const createUser = async (req, res) => {
       lastName: req.body.lastName,
       birthday: req.body.birthday
     };
+    /*await newUser.save();
+    return res.status(201).json({
+      success: true,
+      message: "sighup successful",
+      data: newUser
+    });*/
   
     const response = await mongodb
       .getDb()
