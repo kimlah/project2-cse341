@@ -5,10 +5,10 @@
     "description": "My Recipe API",
     "version": "1.0.0"
   },
-  "host": "localhost:8081",
+  "host": "project2-cse341.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
