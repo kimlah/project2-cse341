@@ -1,0 +1,6 @@
+export const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || '564243039395-ucl9qn0kvbi1j8kggo8uv9ihnm1dpc5d.apps.googleusercontent.com'
+export const GOOGLE_CLIENT_SECRET= process.env.GOOGLE_CLIENT_SECRET || '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'
+export const SERVER_ROOT_URI = 'https://project2-cse341.onrender.com'
+export const UI_ROOT_URI = 'https://project2-cse341.onrender.com'
+export const JWT_SECRET = 'shhhh'
+export const COOKIE_NAME = 'auth_token'
