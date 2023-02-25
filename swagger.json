@@ -15,14 +15,11 @@
       "get": {
         "description": "",
         "parameters": [],
-        "responses": {}
-      }
-    },
-    "/profile": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api-docs": {
